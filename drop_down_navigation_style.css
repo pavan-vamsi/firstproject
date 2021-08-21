@@ -1,0 +1,193 @@
+/*http://css-snippets.com/drop-down-navigation */
+body {
+  margin: 0;
+  padding: 0;
+  background: #aaa;
+}
+/*nav {
+  background: red;
+  padding: 10px;
+}*/
+nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+    width: 15%;
+    border-right: 3px solid yellow;
+    height: 50px;
+    line-height: 50px;
+    font-size: 140%;
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+nav li:last-child{
+	    border-right: none;
+}
+
+nav li li{
+	    border-right: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding-left: 15px;
+  transition: .5s background-color;
+}
+
+nav a:hover {
+  background-color: red;
+}
+
+nav a.active {
+  background-color: #aaa;
+  color: #444;
+  cursor: default;
+}
+
+ /*Sub Menus*/ 
+nav li li {
+  font-size: .8em;
+}
+
+nav > ul > li {
+   text-align: center;
+}
+
+nav > ul > li > a {
+    padding-left: 0;
+}
+
+/* Sub Menus */
+nav li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+}
+
+nav li:hover ul {
+   display: block;
+}
+
+nav li ul li {
+   display: block;
+ }
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.btngroup { 
+    height: 100%;
+}
+
+.btngroup button {
+  background-color: rgb(33,66,99); /* Green background */
+  border: 1px solid rgb(200,200,200); /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left;  /*Float the buttons side by side */
+  width : 50%;
+  height: 50%;
+}
+
+/* Clear floats (clearfix hack) */
+ .btngroup:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+ /*.btngroup button:not(:last-child) {
+  border-top: none; /* Prevent double borders 
+}*/
+
+/* Add a background color on hover */
+.btngroup button:hover {
+  background-color: #3e8e41;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: rgb(33,66,99);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.formstyle {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+table {
+    position: relative;
+    top: 120px;
+    border-collapse: collapse;
+    width: 100%;
+    font-family: calibri,Helvetica, sans-serif;
+    font-weight: bold;
+    font-size:100%;
+}
+th {
+    color: #FFFFFF;
+    border-bottom: 2px solid #adff22;
+    background-color: rgb(33,66,99);
+    background-repeat: no-repeat;
+    border-right: 2px solid #ffffff;
+    border-radius: 5px;
+
+}
+td {
+  background: #f6fef6;
+  color: #808080;
+  border: 2px solid #FFFFFF;
+  text-align: center;
+}
+
+table, td, th {
+
+    padding: 2%;
+}
+tr th:first-child, tr td:first-child {
+  text-align: left;
+}
+tr td {
+  opacity: 0.7;
+
+}
+tr td:hover {
+  opacity: 3.0;
+  font-size: 100%;
+}
